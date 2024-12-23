@@ -1,0 +1,68 @@
+/* Header Styles */
+header {
+  position: fixed; /* Membuat header tetap di atas */
+  top: 0;
+  left: 0;
+  width: 100%; /* Mengisi lebar layar */
+  z-index: 1000; /* Memberikan prioritas agar header berada di atas elemen lain */
+  background: linear-gradient(
+    90deg,
+    #1e3c72,
+    #2a5298,
+    #6b11cb,
+    #8a2be2
+  ); /* Gradasi biru ke ungu lebih dominan */
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek 3D */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 70px; /* Ukuran logo */
+  height: 70px;
+  margin-right: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Tambahkan margin-top untuk konten agar tidak tertutup oleh header */
+body {
+  margin: 0;
+  padding-top: 100px; /* Pastikan sesuai dengan tinggi header */
+}
